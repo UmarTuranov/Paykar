@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bind_card_navigation"
+    app:startDestination="@id/phoneCardFragment">
+
+    <fragment
+        android:id="@+id/phoneCardFragment"
+        android:name="tj.paykar.shop.presentation.card.authorization.PhoneCardFragment"
+        android:label="fragment_phone_card"
+        tools:layout="@layout/fragment_phone_card" >
+        <action
+            android:id="@+id/action_phoneCardFragment_to_confirmCardFragment"
+            app:destination="@id/confirmCardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/confirmCardFragment"
+        android:name="tj.paykar.shop.presentation.card.authorization.ConfirmCardFragment"
+        android:label="fragment_confirm_card"
+        tools:layout="@layout/fragment_confirm_card" />
+</navigation>

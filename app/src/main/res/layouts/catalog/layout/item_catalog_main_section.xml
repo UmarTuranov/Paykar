@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="16dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp">
+
+        <TextView
+            android:id="@+id/sectionName"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginStart="16dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="30dp"
+            android:layout_toStartOf="@+id/viewAll"
+            android:maxLines="1"
+            android:text="@string/sectionName"
+            android:textSize="20sp"
+            android:fontFamily="@font/bold"
+            android:textColor="@color/blackToWhite"
+            app:autoSizeMaxTextSize="17dp"
+            app:autoSizeMinTextSize="15dp"
+            app:autoSizeTextType="uniform" />
+
+        <Button
+            android:id="@+id/viewAll"
+            android:layout_width="140dp"
+            android:layout_height="36dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:text="Смотреть все"
+            android:textAlignment="viewEnd"
+            android:textAllCaps="false"
+            android:textColor="@color/green"
+            app:autoSizeMaxTextSize="15dp"
+            app:autoSizeMinTextSize="13dp"
+            app:autoSizeTextType="uniform"
+            tools:ignore="TouchTargetSizeCheck" />
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/productList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal" />
+
+</LinearLayout>

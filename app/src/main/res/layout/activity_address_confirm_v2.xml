@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/greyActivityBackground"
+    tools:context=".presentation.shop.basket.AddressConfirmActivityV2">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:cardBackgroundColor="@color/lightToDark"
+        app:cardCornerRadius="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/cardTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/addressConf2"
+                android:textColor="@color/blackToWhite"
+                android:textSize="26dp"
+                android:textStyle="bold"
+                app:autoSizeMaxTextSize="26dp"
+                app:autoSizeMinTextSize="24dp"
+                app:autoSizeTextType="uniform"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="SpUsage" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        app:layout_constraintBottom_toTopOf="@+id/footerView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/productRecycle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="12dp"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/delivery_address"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/black_to_white"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/addressBtn"
+                app:icon="@drawable/ic_right"
+                app:iconSize="13dp"
+                app:iconGravity="end"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/green"
+                android:textSize="14dp"
+                app:strokeColor="@color/shopGrey"
+                android:text="@string/test_address"
+                android:textAllCaps="false"
+                android:layout_marginHorizontal="16dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/dateTime"
+                app:icon="@drawable/ic_calendar"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/green"
+                android:textSize="16sp"
+                app:strokeColor="@color/shopGrey"
+                android:text="@string/dateTimeTitle"
+                app:autoSizeMaxTextSize="14dp"
+                app:autoSizeMinTextSize="12dp"
+                app:autoSizeTextType="uniform"
+                android:textAllCaps="false"
+                android:layout_marginHorizontal="16dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/deliveryWayLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="8dp"
+                app:boxCornerRadiusTopStart="10dp"
+                app:boxCornerRadiusTopEnd="10dp"
+                app:boxCornerRadiusBottomStart="10dp"
+                app:boxCornerRadiusBottomEnd="10dp"
+                app:boxStrokeWidthFocused="0dp"
+                app:boxStrokeWidth="0dp"
+                app:boxBackgroundColor="@color/lightToDark"
+                android:hint="@string/delivery_way">
+
+                <AutoCompleteTextView
+                    android:id="@+id/deliveryWayText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Стандартная доставка"
+                    android:enabled="false"
+                    android:textColor="@color/not_enabled_text"
+                    android:textSize="16dp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/payWayLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                app:boxCornerRadiusTopStart="10dp"
+                app:boxCornerRadiusTopEnd="10dp"
+                app:boxCornerRadiusBottomStart="10dp"
+                app:boxCornerRadiusBottomEnd="10dp"
+                app:boxBackgroundColor="@color/lightToDark"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                android:hint="@string/pay_way">
+
+                <AutoCompleteTextView
+                    android:id="@+id/payWayText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Наличные"
+                    android:enabled="false"
+                    android:textColor="@color/not_enabled_text"
+                    android:textSize="16dp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginHorizontal="16dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxCornerRadiusTopStart="10dp"
+                app:boxCornerRadiusTopEnd="10dp"
+                app:boxCornerRadiusBottomStart="10dp"
+                app:boxCornerRadiusBottomEnd="10dp"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                app:boxBackgroundColor="@color/lightToDark"
+                android:hint="@string/comment">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/commentText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minLines="2"
+                    android:gravity="start"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/footerView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:cardBackgroundColor="@color/lightToDark"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/orderPriceTitle"
+                android:layout_width="200dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/orderPrice"
+                android:textSize="16dp"
+                android:textColor="@color/green"
+                app:autoSizeMaxTextSize="16dp"
+                app:autoSizeMinTextSize="14dp"
+                app:autoSizeTextType="uniform"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="SpUsage" />
+
+            <TextView
+                android:id="@+id/orderPrice"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text=""
+                android:textAlignment="textEnd"
+                android:textColor="@color/green"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                tools:ignore="SpUsage"
+                app:autoSizeMaxTextSize="16dp"
+                app:autoSizeMinTextSize="14dp"
+                app:autoSizeTextType="uniform"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/orderPriceTitle"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/deliveryTitle"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/deliveryPrice"
+                android:textColor="@color/green"
+                android:textSize="16dp"
+                tools:ignore="SpUsage"
+                app:autoSizeMaxTextSize="16dp"
+                app:autoSizeMinTextSize="14dp"
+                app:autoSizeTextType="uniform"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/orderPriceTitle" />
+
+            <TextView
+                android:id="@+id/deliveryPrice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:text=""
+                android:textAlignment="textEnd"
+                android:textColor="@color/green"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                tools:ignore="SpUsage"
+                app:autoSizeMaxTextSize="16dp"
+                app:autoSizeMinTextSize="14dp"
+                app:autoSizeTextType="uniform"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/deliveryTitle"
+                app:layout_constraintTop_toBottomOf="@+id/orderPrice" />
+
+            <TextView
+                android:id="@+id/totalPriceTitle"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/totalPrice"
+                android:textColor="@color/red"
+                android:textSize="16dp"
+                tools:ignore="SpUsage"
+                app:autoSizeMaxTextSize="16dp"
+                app:autoSizeMinTextSize="14dp"
+                app:autoSizeTextType="uniform"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/deliveryTitle" />
+
+            <TextView
+                android:id="@+id/totalPrice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:text=""
+                android:textSize="16dp"
+                tools:ignore="SpUsage"
+                android:textAlignment="textEnd"
+                android:textColor="@color/red"
+                android:textStyle="bold"
+                app:autoSizeMaxTextSize="16dp"
+                app:autoSizeMinTextSize="14dp"
+                app:autoSizeTextType="uniform"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/totalPriceTitle"
+                app:layout_constraintTop_toBottomOf="@+id/deliveryPrice" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/resume"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_marginHorizontal="16dp"
+                android:backgroundTint="@color/blackToWhite"
+                android:text="Оформить заказ"
+                android:textAllCaps="false"
+                android:textColor="@color/whiteToBlack"
+                app:autoSizeMaxTextSize="16dp"
+                app:autoSizeMinTextSize="14dp"
+                app:autoSizeTextType="uniform"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/totalPrice"
+                tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

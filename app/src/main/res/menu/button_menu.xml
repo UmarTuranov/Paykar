@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <item
+            android:id="@+id/home"
+            android:enabled="true"
+            android:icon="@drawable/ic_home"
+            android:title="Главная"
+            app:cnb_iconColor="@color/white"
+            app:cnb_iconTintMode="src_in" />
+
+        <item android:id="@+id/catalog"
+            android:title="Продукты"
+            app:showAsAction="ifRoom"
+            android:icon="@drawable/ic_basket_product"
+            app:cnb_iconColor="@color/white"
+            />
+
+        <item android:id="@+id/wallet"
+            android:title="Кошелёк"
+            app:showAsAction="ifRoom"
+            android:icon="@drawable/ic_wallet_3"
+            app:cnb_iconColor="@color/white"
+            />
+
+        <item android:id="@+id/card"
+            android:title="Карта"
+            app:showAsAction="ifRoom"
+            android:icon="@drawable/ic_card"
+            app:cnb_iconColor="@color/white"
+            />
+
+</menu>

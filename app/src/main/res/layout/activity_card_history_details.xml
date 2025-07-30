@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/greyActivityBackground"
+    tools:context=".presentation.card.history.CardHistoryDetailsActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/header"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/lightToDark"
+        app:cardCornerRadius="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/checkNumber"
+                android:layout_width="120dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/checkNumberDetail"
+                android:textColor="@color/blackToWhite"
+                android:textSize="16sp"
+                app:autoSizeMaxTextSize="16dp"
+                app:autoSizeMinTextSize="14dp"
+                app:autoSizeTextType="uniform"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dateCard"
+                tools:ignore="TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/dateCard"
+                android:layout_width="220dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="56dp"
+                android:text="@string/checkDateDetail"
+                android:textSize="16sp"
+                android:fontFamily="@font/light"
+                app:autoSizeMaxTextSize="16dp"
+                app:autoSizeMinTextSize="14dp"
+                app:autoSizeTextType="uniform"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/pointMarketCard"
+                android:layout_width="220dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:text="@string/pointMarketCard"
+                android:textSize="16sp"
+                android:textColor="@color/blackToWhite"
+                android:fontFamily="@font/light"
+                app:autoSizeMaxTextSize="16dp"
+                app:autoSizeMinTextSize="14dp"
+                app:autoSizeTextType="uniform"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/checkNumber"
+                tools:ignore="TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/checkTicketDetail"
+                android:layout_width="120dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/checkTicketDetail"
+                android:textColor="@color/blackToWhite"
+                android:textSize="16sp"
+                app:autoSizeMaxTextSize="16dp"
+                app:autoSizeMinTextSize="14dp"
+                app:autoSizeTextType="uniform"
+                app:layout_constraintStart_toEndOf="@+id/checkNumber"
+                app:layout_constraintTop_toBottomOf="@+id/dateCard"
+                tools:ignore="TextContrastCheck" />
+
+            <ImageButton
+                android:id="@+id/dismiss"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/background_button_custom"
+                android:backgroundTint="@color/buttonCircleBackground"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_close"
+                android:padding="12dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/dateCard"
+                app:tint="@color/green" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/productListCard"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        tools:listitem="@layout/item_card_history_detail_v2"
+        app:layout_constraintBottom_toTopOf="@+id/footer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/footer"
+        android:layout_width="0dp"
+        app:cardBackgroundColor="@color/lightToDark"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/checkTotalDetail"
+                android:layout_width="180dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/checkTotalDetail"
+                android:textSize="16sp"
+                android:textColor="@color/blackToWhite"
+                android:fontFamily="@font/light"
+                app:autoSizeMaxTextSize="16dp"
+                app:autoSizeMinTextSize="14dp"
+                app:autoSizeTextType="uniform"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/checkTotalInDetail"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/checkTotalInDetail"
+                android:textAlignment="viewEnd"
+                android:textSize="16sp"
+                android:textColor="@color/blackToWhite"
+                android:fontFamily="@font/bold"
+                app:autoSizeMaxTextSize="16dp"
+                app:autoSizeMinTextSize="14dp"
+                app:autoSizeTextType="uniform"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/checkTotalDetail"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/checkOffsScoresDetail"
+                android:layout_width="180dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:text="@string/checkOffsScoresDetail"
+                android:textSize="16sp"
+                android:textColor="@color/blackToWhite"
+                android:fontFamily="@font/light"
+                app:autoSizeMaxTextSize="16dp"
+                app:autoSizeMinTextSize="14dp"
+                app:autoSizeTextType="uniform"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/checkTotalDetail" />
+
+            <TextView
+                android:id="@+id/checkOffsScoresInDetail"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/checkOffsScoresInDetail"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/darkGreen"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:autoSizeMaxTextSize="16dp"
+                app:autoSizeMinTextSize="14dp"
+                app:autoSizeTextType="uniform"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/checkOffsScoresDetail"
+                app:layout_constraintTop_toBottomOf="@+id/checkTotalInDetail" />
+
+            <TextView
+                android:id="@+id/checkPaymentDetail"
+                android:layout_width="180dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:text="@string/checkPaymentDetail"
+                android:textSize="16sp"
+                android:textColor="@color/blackToWhite"
+                android:fontFamily="@font/light"
+                app:autoSizeMaxTextSize="16dp"
+                app:autoSizeMinTextSize="14dp"
+                app:autoSizeTextType="uniform"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/checkOffsScoresDetail" />
+
+            <TextView
+                android:id="@+id/checkPaymentTypeDetail"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/checkPaymentTypeDetail"
+                android:textAlignment="viewEnd"
+                android:textSize="16sp"
+                app:autoSizeMaxTextSize="16dp"
+                app:autoSizeMinTextSize="14dp"
+                app:autoSizeTextType="uniform"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/checkPaymentDetail"
+                app:layout_constraintTop_toBottomOf="@+id/checkOffsScoresInDetail" />
+
+            <TextView
+                android:id="@+id/checkYouBenefitDetail"
+                android:layout_width="180dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:text="@string/checkYouBenefitDetail"
+                android:textSize="16sp"
+                android:textColor="@color/blackToWhite"
+                android:fontFamily="@font/light"
+                app:autoSizeMaxTextSize="16dp"
+                app:autoSizeMinTextSize="14dp"
+                app:autoSizeTextType="uniform"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/checkPaymentDetail" />
+
+            <TextView
+                android:id="@+id/checkYouBenefitInDetail"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/checkYouBenefitInDetail"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/green"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:autoSizeMaxTextSize="16dp"
+                app:autoSizeMinTextSize="14dp"
+                app:autoSizeTextType="uniform"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/checkYouBenefitDetail"
+                app:layout_constraintTop_toBottomOf="@+id/checkPaymentTypeDetail"
+                tools:ignore="TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/checkAccruedDetail"
+                android:layout_width="180dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:text="@string/checkAccruedDetail"
+                android:textSize="16sp"
+                android:textColor="@color/blackToWhite"
+                android:fontFamily="@font/light"
+                app:autoSizeMaxTextSize="16dp"
+                app:autoSizeMinTextSize="14dp"
+                app:autoSizeTextType="uniform"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/checkYouBenefitDetail" />
+
+            <TextView
+                android:id="@+id/checkAccruedInDetail"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/checkAccruedInDetail"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/green"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:autoSizeMaxTextSize="16dp"
+                app:autoSizeMinTextSize="14dp"
+                app:autoSizeTextType="uniform"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/checkAccruedDetail"
+                app:layout_constraintTop_toBottomOf="@+id/checkYouBenefitInDetail"
+                tools:ignore="TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/addStar"
+                android:layout_width="180dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/starGet"
+                android:textSize="16sp"
+                android:textColor="@color/blackToWhite"
+                android:fontFamily="@font/light"
+                app:autoSizeMaxTextSize="16dp"
+                app:autoSizeMinTextSize="14dp"
+                app:autoSizeTextType="uniform"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/checkAccruedDetail" />
+
+            <TextView
+                android:id="@+id/addInStar"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/checkAccruedInDetail"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/green"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:autoSizeMaxTextSize="16dp"
+                app:autoSizeMinTextSize="14dp"
+                app:autoSizeTextType="uniform"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/addStar"
+                app:layout_constraintTop_toBottomOf="@+id/checkAccruedInDetail"
+                tools:ignore="TextContrastCheck" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

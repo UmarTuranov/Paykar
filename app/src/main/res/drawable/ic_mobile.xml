@@ -1,0 +1,22 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="512dp"
+    android:height="512dp"
+    android:viewportWidth="512"
+    android:viewportHeight="512">
+  <path
+      android:pathData="m256,0.28c141.38,0 256,114.59 256,255.96s-114.62,256.01 -256,256.01 -256,-114.63 -256,-256.01 114.62,-255.96 256,-255.96zM291.23,388.98a5.07,5.07 0,0 0,-5.08 -5.08h-60.3a5.08,5.08 0,1 0,0 10.16h60.3a5.07,5.07 0,0 0,5.08 -5.08zM237.2,124.88a5.07,5.07 0,0 0,5.08 5.08h0.34a5.08,5.08 0,1 0,0 -10.16h-0.34a5.1,5.1 0,0 0,-5.08 5.08zM250.81,124.88a5.08,5.08 0,0 0,5.08 5.08h13.84a5.08,5.08 0,0 0,0 -10.16h-13.84a5.11,5.11 0,0 0,-5.08 5.08zM192.18,93.78a27.32,27.32 0,0 0,-27.3 27.25v270.45a27.33,27.33 0,0 0,27.3 27.28h127.65a27.32,27.32 0,0 0,27.3 -27.28v-270.45a27.32,27.32 0,0 0,-27.3 -27.25z"
+      android:fillType="evenOdd">
+    <aapt:attr name="android:fillColor">
+      <gradient 
+          android:startX="256"
+          android:startY="512.25"
+          android:endX="256"
+          android:endY="0.28"
+          android:type="linear">
+        <item android:offset="0" android:color="@color/paykar"/>
+        <item android:offset="1" android:color="@color/paykar"/>
+      </gradient>
+    </aapt:attr>
+  </path>
+</vector>

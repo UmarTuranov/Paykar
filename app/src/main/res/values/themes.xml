@@ -1,0 +1,89 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Paykar" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/paykar</item>
+        <item name="colorPrimaryVariant">@color/paykar</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorOnBackground">@color/paykar</item>
+        <item name="statusBarBackground">@color/statusBarBackground</item>
+        <item name="switchStyle">@style/Widget.App.Switch</item>
+
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/statusBarBackground</item>
+        <!-- Customize your theme here. -->
+        <item name="android:navigationBarColor">@color/cardBackground</item>
+
+        <!-- Set the default global color for TextViews to Custom -->
+
+        <item name="android:textColorPrimary">@color/tvColor</item>
+        <item name="android:textColorSecondary">@color/tvColor</item>
+        <item name="android:textColorTertiary">@color/tvColor</item>
+        <item name="android:textColorHint">@color/tvColor</item>
+        <item name="android:fontFamily">@font/regular</item>
+
+    </style>
+
+    <style name="MyDatePickerStyle" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/paykar</item>
+        <item name="colorPrimary">@color/darkGreen</item>
+        <item name="colorOnPrimary">@color/darkGreen</item>
+    </style>
+
+    <style name="Widget.App.Switch" parent="Widget.MaterialComponents.CompoundButton.Switch">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.Switch</item>
+    </style>
+
+    <style name="ThemeOverlay.App.Switch" parent="">
+        <item name="colorOnSurface">@color/shopGrey</item>
+        <item name="colorSecondary">@color/paykar</item>
+    </style>
+
+    <!-- _________________BottomSheet_________________ -->
+    <style name="BottomSheetDialogTheme" parent="Theme.Design.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BottomSheetStyle</item>
+    </style>
+
+    <style name="BottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="behavior_fitToContents">true</item>
+    </style>
+
+    <style name="CustomSearchViewStyle" parent="Widget.AppCompat.SearchView">
+
+        <item name="android:textColor">@color/white</item>
+        <item name="android:editTextColor">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="colorSecondary">@color/white</item>
+
+    </style>
+
+    <style name="ExpandedToolbarLayoutTitle" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:fontFamily">@font/bold</item> <!-- Custom font -->
+        <item name="android:textSize">25sp</item> <!-- Custom text size -->
+        <item name="android:textColor">@color/white</item> <!-- Custom text color -->
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="CollapsedToolbarLayoutTitle" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:fontFamily">@font/bold</item> <!-- Custom font -->
+        <item name="android:textSize">18sp</item> <!-- Custom text size -->
+        <item name="android:textColor">@color/white</item> <!-- Custom text color -->
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="FabCustomStyle" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">27dp</item>
+    </style>
+
+    <style name="RangeDatePickerStyle" parent="ThemeOverlay.MaterialComponents.MaterialCalendar">
+        <item name="android:windowFullscreen">false</item>
+    </style>
+</resources>

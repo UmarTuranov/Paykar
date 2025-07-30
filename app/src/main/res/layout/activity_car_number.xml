@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/greyActivityBackground"
+    tools:context=".presentation.parking.CarNumberActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/personal_qr"
+            android:textColor="@color/blackToWhite"
+            android:textSize="20sp"
+            android:fontFamily="@font/bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/car_number"
+            android:textColor="@color/blackToWhite"
+            android:textAlignment="center"
+            android:fontFamily="@font/light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/plateNumberLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="32dp"
+            android:hint="@string/state_number"
+            app:boxCornerRadiusTopStart="10dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:boxCornerRadiusBottomEnd="10dp"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            app:boxBackgroundColor="@color/lightToDark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView10">
+
+            <AutoCompleteTextView
+                android:id="@+id/plateNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/lastVisitCV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="20dp"
+            app:cardBackgroundColor="@color/lightToDark"
+            app:cardElevation="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="16dp"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp">
+
+                    <TextView
+                        android:id="@+id/lastVisitTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Последний визит"
+                        android:textColor="@color/black_to_white"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/medium"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/lVStatus"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="На парковочной зоне"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/paykar"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@id/lastVisitTitle"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/lastVisitTitle"
+                        app:layout_constraintTop_toTopOf="@id/lastVisitTitle" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/entryTimeTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Дата входа:"
+                        android:textColor="@color/black_to_white"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/light"
+                        app:layout_constraintStart_toStartOf="@id/lastVisitTitle"
+                        app:layout_constraintTop_toBottomOf="@id/lastVisitTitle" />
+
+                    <TextView
+                        android:id="@+id/lVEntryTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="01.11.2023 | 11:15"
+                        android:textColor="@color/black_to_white"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/medium"
+                        app:layout_constraintBottom_toBottomOf="@id/entryTimeTitle"
+                        app:layout_constraintStart_toEndOf="@id/entryTimeTitle"
+                        app:layout_constraintTop_toTopOf="@id/entryTimeTitle" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginHorizontal="16dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/exitTimeTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Дата выхода:"
+                        android:textColor="@color/black_to_white"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/light"
+                        app:layout_constraintStart_toStartOf="@id/entryTimeTitle"
+                        app:layout_constraintTop_toBottomOf="@id/entryTimeTitle" />
+
+                    <TextView
+                        android:id="@+id/lVExitTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="01.11.2023 | 11:15"
+                        android:textColor="@color/black_to_white"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/medium"
+                        app:layout_constraintBottom_toBottomOf="@id/exitTimeTitle"
+                        app:layout_constraintStart_toEndOf="@id/exitTimeTitle"
+                        app:layout_constraintTop_toTopOf="@id/exitTimeTitle" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginHorizontal="16dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/totalTimeTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Общее время:"
+                        android:textColor="@color/black_to_white"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/light"
+                        app:layout_constraintStart_toStartOf="@id/exitTimeTitle"
+                        app:layout_constraintTop_toBottomOf="@id/exitTimeTitle" />
+
+                    <TextView
+                        android:id="@+id/lVTotalTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="1:20:34"
+                        android:textColor="@color/black_to_white"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/medium"
+                        app:layout_constraintBottom_toBottomOf="@id/totalTimeTitle"
+                        app:layout_constraintStart_toEndOf="@id/totalTimeTitle"
+                        app:layout_constraintTop_toTopOf="@id/totalTimeTitle" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginHorizontal="16dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Тариф:"
+                        android:textColor="@color/black_to_white"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/light" />
+
+                    <TextView
+                        android:id="@+id/lVTariffName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="Стандартный"
+                        android:textColor="@color/black_to_white"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/medium"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/lVTotalTime" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginHorizontal="16dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Оплачено:"
+                        android:textColor="@color/black_to_white"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/light"
+                        app:layout_constraintBottom_toBottomOf="@id/lVPaid"
+                        app:layout_constraintEnd_toStartOf="@id/lVPaid"
+                        app:layout_constraintTop_toTopOf="@id/lVPaid" />
+
+                    <TextView
+                        android:id="@+id/lVPaid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="25"
+                        android:textColor="@color/black_to_white"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/medium"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/lVTariffName" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/remember_my_s_n"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/remember_my_s_n"
+            android:textColor="@color/black_to_white"
+            app:buttonIconTint="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/plateNumberLayout" />
+
+        <CheckBox
+            android:id="@+id/i_accept"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:text="@string/i_accept"
+            android:textColor="@color/black_to_white"
+            app:buttonIconTint="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/remember_my_s_n" />
+
+        <TextView
+            android:id="@+id/descriptionText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/descriptionText"
+            android:textAlignment="center"
+            android:fontFamily="@font/light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/userAgreement" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/getQrCodeBtn"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/getQr"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/descriptionText" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

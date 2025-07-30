@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#13a538</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="green">#00be02</color>
+    <color name="greenOpacity">#8113A538</color>
+    <color name="darkGreen">#019601</color>
+    <color name="cardBackground">#FDFDFC</color>
+    <color name="statusBarBackground">#01cb0b</color>
+    <color name="shopGrey">#CFCFCF</color>
+    <color name="mGrey">#CFCFCF</color>
+    <color name="greyOpacity">#99BDBCBC</color>
+    <color name="whiteOpacity">#6BFFFFFF</color>
+    <color name="shimmerColor">#BABABA</color>
+    <color name="red">#FF0000</color>
+    <color name="yellow">#FFDB29</color>
+    <color name="black_to_white">#000000</color>
+    <color name="white_to_black">#FFFFFF</color>
+    <color name="pink">#37FF0000</color>
+    <color name="tvColor">#757575</color>
+    <color name="gradientBottom">#007700</color>
+    <color name="gradientBottom2">#17243e</color>
+    <color name="gradientTop">#01cb0b</color>
+    <color name="buttonCircleBackground">#f4f4f4</color>
+
+    <!-- Wallet Colors-->
+    <color name="blackToWhite">#FF000000</color>
+    <color name="whiteToBlack">#FFFFFFFF</color>
+    <color name="greyActivityBackground">#f1f5f8</color>
+    <color name="lightToDark">#FFFFFFFF</color>
+    <color name="paykar">#00be02</color>
+    <color name="circleCardColor">#ecfaef</color>
+    <color name="blurWhiteToBlack">#41FFFFFF</color>
+    <color name="transparentWhiteToBlack">#40FFFFFF</color>
+    <color name="borderGrey">#8CFFFFFF</color>
+    <color name="grey">#dcdcdc</color>
+    <color name="orange">#FFC107</color>
+</resources>

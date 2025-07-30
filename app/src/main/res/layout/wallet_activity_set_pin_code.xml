@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/greyActivityBackground"
+    tools:context=".presentation.wallet.pincode.CodeActivity">
+
+    <LinearLayout
+        android:id="@+id/logoTitleLiner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/plogo"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_security"
+            app:tint="@color/paykar" />
+
+        <TextView
+            android:id="@+id/infoTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/regular"
+            android:text=""
+            android:textColor="@color/blackToWhite"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/plogo" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/errorTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/regular"
+        android:text="Неверный PIN-код"
+        android:textColor="@color/red"
+        android:textSize="17sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/textButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/light"
+        android:text="Изменить PIN-код"
+        android:textColor="@color/blackToWhite"
+        android:textSize="15sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/keyboardLinear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/errorTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoTitleLiner">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/firstNumberCard"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_marginVertical="2dp"
+            android:layout_marginEnd="16dp"
+            app:cardBackgroundColor="@android:color/transparent"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="0dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/firstNumberLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border_green">
+
+                <TextView
+                    android:id="@+id/firstNumberTitle"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bold"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="@color/blackToWhite"
+                    android:textSize="15sp"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/secondNumberCard"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_marginVertical="2dp"
+            android:layout_marginEnd="16dp"
+            app:cardBackgroundColor="@android:color/transparent"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="0dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/secondNumberLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border_grey">
+
+                <TextView
+                    android:id="@+id/secondNumberTitle"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bold"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="@color/blackToWhite"
+                    android:textSize="15sp"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/thirdNumberCard"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_marginVertical="2dp"
+            android:layout_marginEnd="16dp"
+            app:cardBackgroundColor="@android:color/transparent"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="0dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/thirdNumberLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border_grey">
+
+                <TextView
+                    android:id="@+id/thirdNumberTitle"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bold"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="@color/blackToWhite"
+                    android:textSize="15sp"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/fourthNumberCard"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_marginVertical="2dp"
+            app:cardBackgroundColor="@android:color/transparent"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="0dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/fourthNumberLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border_grey">
+
+                <TextView
+                    android:id="@+id/fourthNumberTitle"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bold"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="@color/blackToWhite"
+                    android:textSize="15sp"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/keyboardLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/wallet_footerview_background"
+        android:backgroundTint="@color/lightToDark"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="32dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/oneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:text="1"
+                android:textSize="25sp"
+                android:fontFamily="@font/bold"
+                android:textColor="@color/blackToWhite"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/transparent"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/twoNumber"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:text="2"
+                android:textSize="25sp"
+                android:fontFamily="@font/bold"
+                android:textColor="@color/blackToWhite"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/transparent"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/threeNumber"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:text="3"
+                android:textSize="25sp"
+                android:fontFamily="@font/bold"
+                android:textColor="@color/blackToWhite"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/transparent"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="32dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/fourNumber"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:text="4"
+                android:textSize="25sp"
+                android:fontFamily="@font/bold"
+                android:textColor="@color/blackToWhite"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/transparent"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/fiveNumber"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:text="5"
+                android:textSize="25sp"
+                android:fontFamily="@font/bold"
+                android:textColor="@color/blackToWhite"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/transparent"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/sixNumber"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:text="6"
+                android:textSize="25sp"
+                android:fontFamily="@font/bold"
+                android:textColor="@color/blackToWhite"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/transparent"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="32dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/sevenNumber"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:text="7"
+                android:textSize="25sp"
+                android:fontFamily="@font/bold"
+                android:textColor="@color/blackToWhite"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/transparent"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/eightNumber"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:text="8"
+                android:textSize="25sp"
+                android:fontFamily="@font/bold"
+                android:textColor="@color/blackToWhite"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/transparent"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/nineNumber"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:text="9"
+                android:textSize="25sp"
+                android:fontFamily="@font/bold"
+                android:textColor="@color/blackToWhite"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/transparent"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:paddingHorizontal="32dp"
+            android:orientation="horizontal">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_weight="1"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/zeroNumber"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:text="0"
+                android:textSize="25sp"
+                android:fontFamily="@font/bold"
+                android:textColor="@color/blackToWhite"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/transparent"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/backspaceLayout"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_backspace"
+                    android:tint="@color/blackToWhite"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

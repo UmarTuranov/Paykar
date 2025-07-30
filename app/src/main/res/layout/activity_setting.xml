@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/greyActivityBackground"
+    tools:context=".presentation.setting.SettingActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="24dp"
+        app:cardBackgroundColor="@color/lightToDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/settingTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="56dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/settingTitle"
+                android:textColor="@color/blackToWhite"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:autoSizeMaxTextSize="28dp"
+                app:autoSizeMinTextSize="26dp"
+                app:autoSizeStepGranularity="28dp"
+                app:autoSizeTextType="uniform"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/exitButton"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/exitButton"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/background_button_custom"
+                android:backgroundTint="@color/buttonCircleBackground"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_close"
+                android:padding="12dp"
+                app:layout_constraintBottom_toBottomOf="@+id/settingTitle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/settingTitle"
+                app:tint="@color/green"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+        <TextView
+            android:id="@+id/accountText"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/account"
+            android:textColor="@color/blackToWhite"
+            android:textSize="16sp"
+            android:fontFamily="@font/regular"
+            app:autoSizeMaxTextSize="16dp"
+            app:autoSizeMinTextSize="14dp"
+            app:autoSizeStepGranularity="16dp"
+            app:autoSizeTextType="uniform" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/editAccountBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="16dp"
+            app:cardBackgroundColor="@color/blackToWhite"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:minHeight="55dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="Редактировать аккаунт"
+                    android:textColor="@color/whiteToBlack"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageButton
+                    android:id="@+id/imgBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/background_button_custom2"
+                    android:contentDescription="@string/app_name"
+                    android:padding="4dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_next"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/permissions"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/permissionTitle"
+            android:textColor="@color/blackToWhite"
+            android:textSize="16sp"
+            android:fontFamily="@font/regular"
+            app:autoSizeMaxTextSize="16dp"
+            app:autoSizeMinTextSize="14dp"
+            app:autoSizeStepGranularity="16dp"
+            app:autoSizeTextType="uniform" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/onPush"
+            style="@style/Widget.App.Switch"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:checked="true"
+            android:text="@string/onPush"
+            android:textColor="@color/black_to_white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:autoSizeMaxTextSize="16dp"
+            app:autoSizeMinTextSize="14dp"
+            app:autoSizeTextType="uniform"
+            app:autoSizeStepGranularity="16dp"
+            app:useMaterialThemeColors="false" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/onLocation"
+            style="@style/Widget.App.Switch"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:checked="true"
+            android:text="@string/onLocation"
+            android:textColor="@color/blackToWhite"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:autoSizeMaxTextSize="16dp"
+            app:autoSizeMinTextSize="14dp"
+            app:autoSizeTextType="uniform"
+            app:autoSizeStepGranularity="16dp"
+            app:useMaterialThemeColors="false" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/active_devices_title"
+            android:textColor="@color/blackToWhite"
+            android:textSize="16sp"
+            android:visibility="gone"
+            android:fontFamily="@font/regular"
+            app:autoSizeMaxTextSize="16dp"
+            app:autoSizeMinTextSize="14dp"
+            app:autoSizeStepGranularity="16dp"
+            app:autoSizeTextType="uniform" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/my_devices_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginTop="8dp" />
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/buttonCardView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:cardBackgroundColor="@color/lightToDark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/aboutTitle"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/versionAppTitle"
+                android:textColor="@color/shopGrey"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:autoSizeMaxTextSize="14dp"
+                app:autoSizeMinTextSize="12dp"
+                app:autoSizeStepGranularity="14dp"
+                app:autoSizeTextType="uniform"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/version"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/versionApp"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/shopGrey"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:autoSizeMaxTextSize="14dp"
+                app:autoSizeMinTextSize="12dp"
+                app:autoSizeStepGranularity="14dp"
+                app:autoSizeTextType="uniform"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/aboutTitle"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

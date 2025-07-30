@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        app:cardBackgroundColor="@color/cardBackground"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/productImgCV"
+                android:layout_width="78dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="12dp">
+
+                <ImageView
+                    android:id="@+id/productImg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/round_outline"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="centerCrop"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/productName"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_toStartOf="@+id/deleteBasketItem"
+                android:layout_toEndOf="@+id/productImgCV"
+                android:maxLines="2"
+                android:text="@string/productName"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/blackToWhite"
+                app:autoSizeMaxTextSize="14dp"
+                app:autoSizeMinTextSize="13dp"
+                app:autoSizeStepGranularity="14dp"
+                app:autoSizeTextType="uniform" />
+
+            <TextView
+                android:id="@+id/productTitlePrice"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:layout_below="@+id/productName"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_toEndOf="@+id/productImgCV"
+                android:maxLines="1"
+                android:text="@string/priceTitle"
+                android:textSize="12sp"
+                android:fontFamily="@font/light"
+                app:autoSizeMaxTextSize="12dp"
+                app:autoSizeMinTextSize="11dp"
+                app:autoSizeStepGranularity="12dp"
+                app:autoSizeTextType="uniform" />
+
+            <TextView
+                android:id="@+id/productPrice"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_below="@+id/productTitlePrice"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="16dp"
+                android:layout_toEndOf="@+id/productImgCV"
+                android:maxLines="1"
+                android:text="@string/productPrice"
+                android:textColor="@color/green"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:autoSizeMaxTextSize="16dp"
+                app:autoSizeMinTextSize="15dp"
+                app:autoSizeStepGranularity="16dp"
+                app:autoSizeTextType="uniform" />
+
+            <!--            <ImageButton-->
+            <!--                android:id="@+id/productBasket"-->
+            <!--                android:layout_width="48dp"-->
+            <!--                android:layout_height="48dp"-->
+            <!--                android:layout_alignParentEnd="true"-->
+            <!--                android:layout_alignParentBottom="true"-->
+            <!--                android:layout_marginEnd="8dp"-->
+            <!--                android:layout_marginBottom="8dp"-->
+            <!--                android:background="@android:color/transparent"-->
+            <!--                android:contentDescription="@string/app_name"-->
+            <!--                android:padding="8dp"-->
+            <!--                android:scaleType="centerCrop"-->
+            <!--                android:src="@drawable/ic_shopping_cart_2" />-->
+
+            <!--            <ImageView-->
+            <!--                android:id="@+id/inBasketBackground"-->
+            <!--                android:layout_width="16dp"-->
+            <!--                android:layout_height="16dp"-->
+            <!--                android:layout_alignTop="@+id/productBasket"-->
+            <!--                android:layout_alignEnd="@+id/productBasket"-->
+            <!--                android:layout_marginTop="4dp"-->
+            <!--                android:layout_marginEnd="3dp"-->
+            <!--                app:srcCompat="@drawable/ic_circle_2" />-->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/basket_count_view_outline"
+                android:gravity="center_vertical">
+
+                <ImageButton
+                    android:id="@+id/productBasketMinus"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:backgroundTint="@android:color/transparent"
+                    android:src="@drawable/ic_baseline_horizontal_rule_24" />
+
+                <TextView
+                    android:id="@+id/inBasket"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:text="@string/basketQuan"
+                    android:textAlignment="center"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:autoSizeMaxTextSize="14dp"
+                    app:autoSizeMinTextSize="13dp"
+                    app:autoSizeStepGranularity="14dp"
+                    app:autoSizeTextType="uniform"
+                    tools:ignore="SmallSp" />
+
+                <ImageButton
+                    android:id="@+id/productBasket"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:backgroundTint="@android:color/transparent"
+                    android:src="@drawable/ic_basket_add"
+                    app:tint="@color/green"/>
+
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/deleteBasketItem"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="20dp"
+                android:background="@android:color/transparent"
+                android:padding="6dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/ic_close"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

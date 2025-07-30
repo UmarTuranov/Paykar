@@ -1,0 +1,146 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id("com.google.gms.google-services")
+}
+
+android {
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "tj.paykar.shop"
+        minSdk 29
+        targetSdk 35
+        versionCode 55
+        versionName "3.0.5"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+//            signingConfig
+//            debuggable = false
+        }
+    }
+
+    sourceSets {
+        main {
+            res {
+                srcDirs 'src/main/res',
+                        'src/main/res/layouts/',
+                        'src/main/res/layouts/home',
+                        'src/main/res/layouts/catalog',
+                        'src/main/res/layouts/search',
+                        'src/main/res/layouts/basket',
+                        'src/main/res/layouts/profile',
+                        'src/main/res/layouts/notification',
+                        'src/main/res/layouts/wishlist',
+                        'src/main/res/layouts/webview',
+                        'src/main/res/layouts/promo',
+                        'src/main/res/layouts/card',
+                        'src/main/res/layouts/setting',
+                        'src/main/res/layouts/authorization'
+            }
+        }
+    }
+
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.core:core-ktx:1.12.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.12.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.7.7'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.7.7'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.firebase:firebase-messaging-ktx:23.4.1'
+    implementation 'androidx.activity:activity:1.9.0'
+    implementation 'com.google.android.gms:play-services-location:21.3.0'
+
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.4.0'
+    implementation 'androidx.lifecycle:lifecycle-process:2.4.0'
+    implementation 'androidx.lifecycle:lifecycle-common-java8:2.4.0'
+
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+    implementation 'com.github.ismaeldivita:chip-navigation-bar:1.4.0'
+
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+
+    implementation 'com.github.bumptech.glide:glide:4.16.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.15.1'
+
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3'
+
+    implementation 'com.facebook.shimmer:shimmer:0.5.0'
+
+    implementation 'com.google.zxing:core:3.4.1'
+    implementation 'me.dm7.barcodescanner:zxing:1.9.13'
+
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.9.3'
+
+    implementation "com.airbnb.android:lottie:5.1.1"
+
+    implementation 'com.github.bolaware:momentz:v2.0'
+
+    implementation 'com.getkeepsafe.taptargetview:taptargetview:1.13.3'
+
+    implementation 'id.zelory:compressor:3.0.1'
+
+    implementation(platform("com.google.firebase:firebase-bom:32.2.0"))
+    implementation 'com.google.firebase:firebase-messaging'
+    implementation 'com.google.firebase:firebase-analytics'
+
+    implementation 'com.squareup.picasso:picasso:2.8'
+
+
+    // For Kotlin users also add the Kotlin extensions library for Play In-App Update:
+    implementation 'com.google.android.play:app-update:2.1.0'
+    implementation 'com.google.android.play:app-update-ktx:2.1.0'
+    implementation 'com.google.android.play:review:2.0.1'
+    implementation 'com.google.android.play:review-ktx:2.0.1'
+
+    implementation 'com.github.shuhart:stepview:1.5.1'
+
+    implementation 'com.github.furkankaplan:fk-blur-view-android:1.0.1'
+
+    implementation 'com.google.android.flexbox:flexbox:3.0.0'
+    implementation 'com.github.Dimezis:BlurView:version-2.0.5'
+
+    // WALLET
+    implementation("com.github.mohammadatif:Animatoo:master")
+    implementation("com.journeyapps:zxing-android-embedded:4.1.0")
+    implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.1.0")
+    implementation("androidx.biometric:biometric:1.1.0")
+    implementation("io.coil-kt:coil:2.4.0")
+    implementation("io.coil-kt:coil-svg:2.4.0")
+    implementation("id.zelory:compressor:3.0.1")
+    implementation("com.itextpdf:itext7-core:7.1.15")
+    implementation("com.itextpdf:itext7-core:7.1.15")
+    implementation("com.github.nirhart:parallaxscroll:1.0")
+    implementation("com.google.code.gson:gson:2.8.9")
+}
+
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'

@@ -1,0 +1,153 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1155" />
+        <entry key="app/src/main/res/drawable/background_button_custom.xml" value="0.179" />
+        <entry key="app/src/main/res/drawable/basket_count_view_outline.xml" value="0.206" />
+        <entry key="app/src/main/res/drawable/bottom_sheet_background.xml" value="0.206" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1155" />
+        <entry key="app/src/main/res/drawable/round_outline.xml" value="0.1015" />
+        <entry key="app/src/main/res/drawable/search_view_outline.xml" value="0.1015" />
+        <entry key="app/src/main/res/layout-v26/activity_review.xml" value="0.24270833333333333" />
+        <entry key="app/src/main/res/layout-v31/item_catalog_section_product.xml" value="0.2499636614764178" />
+        <entry key="app/src/main/res/layout/activity_address.xml" value="0.30512820512820515" />
+        <entry key="app/src/main/res/layout/activity_address_confirm.xml" value="0.251800537109375" />
+        <entry key="app/src/main/res/layout/activity_address_confirm_v2.xml" value="0.30512820512820515" />
+        <entry key="app/src/main/res/layout/activity_address_edit.xml" value="0.2931411743164063" />
+        <entry key="app/src/main/res/layout/activity_address_info.xml" value="0.30512820512820515" />
+        <entry key="app/src/main/res/layout/activity_address_map.xml" value="0.14114583333333333" />
+        <entry key="app/src/main/res/layout/activity_basket.xml" value="0.27620544433593747" />
+        <entry key="app/src/main/res/layout/activity_bind_card.xml" value="0.28161010742187503" />
+        <entry key="app/src/main/res/layout/activity_card_history.xml" value="0.2698870623553241" />
+        <entry key="app/src/main/res/layout/activity_card_history_details.xml" value="0.2671065993536086" />
+        <entry key="app/src/main/res/layout/activity_catalog.xml" value="0.27565155029296873" />
+        <entry key="app/src/main/res/layout/activity_catalog_product.xml" value="0.22204132080078126" />
+        <entry key="app/src/main/res/layout/activity_catalog_section.xml" value="0.2796296296296297" />
+        <entry key="app/src/main/res/layout/activity_catalog_section_product.xml" value="0.2103760895905671" />
+        <entry key="app/src/main/res/layout/activity_cheque_list.xml" value="0.22526397705078136" />
+        <entry key="app/src/main/res/layout/activity_confirm_order.xml" value="0.2490740740740741" />
+        <entry key="app/src/main/res/layout/activity_cupon.xml" value="0.2947916666666667" />
+        <entry key="app/src/main/res/layout/activity_cupon_detail.xml" value="0.22909647623697926" />
+        <entry key="app/src/main/res/layout/activity_internet_connection.xml" value="0.2490740740740741" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.26061248779296875" />
+        <entry key="app/src/main/res/layout/activity_main2.xml" value="0.15520833333333334" />
+        <entry key="app/src/main/res/layout/activity_my_baskets.xml" value="0.2635525825696114" />
+        <entry key="app/src/main/res/layout/activity_my_baskets_products.xml" value="0.24037295610476767" />
+        <entry key="app/src/main/res/layout/activity_notification.xml" value="0.2964584350585938" />
+        <entry key="app/src/main/res/layout/activity_notifycation_card.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/activity_order_history.xml" value="0.27728910092954284" />
+        <entry key="app/src/main/res/layout/activity_order_history_detail.xml" value="0.2676620483398438" />
+        <entry key="app/src/main/res/layout/activity_personal.xml" value="0.2727740252459491" />
+        <entry key="app/src/main/res/layout/activity_present.xml" value="0.2490740740740741" />
+        <entry key="app/src/main/res/layout/activity_profile.xml" value="0.2772293090820313" />
+        <entry key="app/src/main/res/layout/activity_profile_edit.xml" value="0.2594739082532051" />
+        <entry key="app/src/main/res/layout/activity_profile_v2.xml" value="0.27779998779296877" />
+        <entry key="app/src/main/res/layout/activity_promo.xml" value="0.2066088641131365" />
+        <entry key="app/src/main/res/layout/activity_promo_card.xml" value="0.2490740740740741" />
+        <entry key="app/src/main/res/layout/activity_promo_detail.xml" value="0.2490740740740741" />
+        <entry key="app/src/main/res/layout/activity_promo_detail_card.xml" value="0.2490740740740741" />
+        <entry key="app/src/main/res/layout/activity_review.xml" value="0.24270833333333333" />
+        <entry key="app/src/main/res/layout/activity_search.xml" value="0.2678131103515625" />
+        <entry key="app/src/main/res/layout/activity_search_result.xml" value="0.20533322934751158" />
+        <entry key="app/src/main/res/layout/activity_setting.xml" value="0.23976889279290162" />
+        <entry key="app/src/main/res/layout/activity_spalsh.xml" value="0.14117279052734377" />
+        <entry key="app/src/main/res/layout/activity_virtual_card.xml" value="0.29181814816399543" />
+        <entry key="app/src/main/res/layout/activity_web_chat.xml" value="0.18519287109375002" />
+        <entry key="app/src/main/res/layout/activity_web_view.xml" value="0.2490740740740741" />
+        <entry key="app/src/main/res/layout/activity_wishlist.xml" value="0.2250396728515625" />
+        <entry key="app/src/main/res/layout/activity_yandex_map.xml" value="0.235284423828125" />
+        <entry key="app/src/main/res/layout/address_item_layout.xml" value="0.30512820512820515" />
+        <entry key="app/src/main/res/layout/fragment_authorization.xml" value="0.2796296296296296" />
+        <entry key="app/src/main/res/layout/fragment_confirm_card.xml" value="0.2455398559570313" />
+        <entry key="app/src/main/res/layout/fragment_confirmation.xml" value="0.2796296296296296" />
+        <entry key="app/src/main/res/layout/fragment_phone_card.xml" value="0.2512969970703125" />
+        <entry key="app/src/main/res/layout/fragment_registration.xml" value="0.23395843505859376" />
+        <entry key="app/src/main/res/layout/home/activity_main2.xml" value="0.2796296296296296" />
+        <entry key="app/src/main/res/layout/item_card_history.xml" value="0.3048590175553326" />
+        <entry key="app/src/main/res/layout/item_card_history_detail.xml" value="0.3180422747576678" />
+        <entry key="app/src/main/res/layout/item_card_history_detail_v2.xml" value="0.47402219419126157" />
+        <entry key="app/src/main/res/layout/item_catalog.xml" value="0.27303314208984375" />
+        <entry key="app/src/main/res/layout/item_catalog_section_product.xml" value="0.2949821245206574" />
+        <entry key="app/src/main/res/layout/item_catalog_section_product_shimmer.xml" value="0.2490740740740741" />
+        <entry key="app/src/main/res/layout/item_catalog_shimmer.xml" value="0.2490740740740741" />
+        <entry key="app/src/main/res/layout/item_cheque_list.xml" value="0.32693116810400163" />
+        <entry key="app/src/main/res/layout/item_cupons.xml" value="0.401910400390625" />
+        <entry key="app/src/main/res/layout/item_home_promo.xml" value="0.2490740740740741" />
+        <entry key="app/src/main/res/layout/item_my_baskets.xml" value="0.3038665771484375" />
+        <entry key="app/src/main/res/layout/item_my_baskets_list.xml" value="0.3041025641025641" />
+        <entry key="app/src/main/res/layout/item_my_baskets_products.xml" value="0.3041025641025641" />
+        <entry key="app/src/main/res/layout/item_notify.xml" value="0.22611999511718744" />
+        <entry key="app/src/main/res/layout/item_notifycation.xml" value="0.41770186335403725" />
+        <entry key="app/src/main/res/layout/item_notifycation_card.xml" value="0.3437001546223958" />
+        <entry key="app/src/main/res/layout/item_order_history.xml" value="0.33245248027231505" />
+        <entry key="app/src/main/res/layout/item_product_image.xml" value="0.2989827473958333" />
+        <entry key="app/src/main/res/layout/item_promo.xml" value="0.253303810402199" />
+        <entry key="app/src/main/res/layout/item_reviews.xml" value="0.31409371634510075" />
+        <entry key="app/src/main/res/layout/item_wishlist.xml" value="0.3556640625" />
+        <entry key="app/src/main/res/layout/layout_bottom_sheet.xml" value="0.3041025641025641" />
+        <entry key="app/src/main/res/layout/layout_my_baskets_list_bottomsheet.xml" value="0.30512820512820515" />
+        <entry key="app/src/main/res/layout/list_item.xml" value="0.3041025641025641" />
+        <entry key="app/src/main/res/layouts/authorization/drawable/ic_add_list.xml" value="0.179" />
+        <entry key="app/src/main/res/layouts/authorization/drawable/ic_arrow_back.xml" value="0.179" />
+        <entry key="app/src/main/res/layouts/authorization/drawable/ic_barcode.xml" value="0.1705" />
+        <entry key="app/src/main/res/layouts/authorization/drawable/ic_baseline_horizontal_rule_24.xml" value="0.206" />
+        <entry key="app/src/main/res/layouts/authorization/drawable/ic_basket_add.xml" value="0.206" />
+        <entry key="app/src/main/res/layouts/authorization/drawable/ic_basketlist_ic.xml" value="0.179" />
+        <entry key="app/src/main/res/layouts/authorization/drawable/ic_calendar.xml" value="0.179" />
+        <entry key="app/src/main/res/layouts/authorization/drawable/ic_check.xml" value="0.206" />
+        <entry key="app/src/main/res/layouts/authorization/drawable/ic_circle_2.xml" value="0.1155" />
+        <entry key="app/src/main/res/layouts/authorization/drawable/ic_close.xml" value="0.1155" />
+        <entry key="app/src/main/res/layouts/authorization/drawable/ic_delete.xml" value="0.1015" />
+        <entry key="app/src/main/res/layouts/authorization/drawable/ic_delete_2.xml" value="0.1015" />
+        <entry key="app/src/main/res/layouts/authorization/drawable/ic_edit_v2.xml" value="0.206" />
+        <entry key="app/src/main/res/layouts/authorization/drawable/ic_icon_green_2.xml" value="0.1705" />
+        <entry key="app/src/main/res/layouts/authorization/drawable/ic_launcher_background.xml" value="0.1155" />
+        <entry key="app/src/main/res/layouts/authorization/drawable/ic_mark.xml" value="0.179" />
+        <entry key="app/src/main/res/layouts/authorization/drawable/ic_megaphone.xml" value="0.206" />
+        <entry key="app/src/main/res/layouts/authorization/drawable/ic_next.xml" value="0.206" />
+        <entry key="app/src/main/res/layouts/authorization/drawable/ic_plus.xml" value="0.206" />
+        <entry key="app/src/main/res/layouts/authorization/drawable/ic_plus_2.xml" value="0.206" />
+        <entry key="app/src/main/res/layouts/authorization/drawable/ic_shopping_cart.xml" value="0.1155" />
+        <entry key="app/src/main/res/layouts/authorization/drawable/ic_shopping_cart_1.xml" value="0.1155" />
+        <entry key="app/src/main/res/layouts/authorization/drawable/ic_shopping_cart_2.xml" value="0.1155" />
+        <entry key="app/src/main/res/layouts/authorization/layout-v26/fragment_confirmation.xml" value="0.2490740740740741" />
+        <entry key="app/src/main/res/layouts/authorization/layout/activity_login.xml" value="0.27688293457031254" />
+        <entry key="app/src/main/res/layouts/authorization/layout/fragment_authorization.xml" value="0.23191070556640622" />
+        <entry key="app/src/main/res/layouts/authorization/layout/fragment_confirmation.xml" value="0.2796296296296296" />
+        <entry key="app/src/main/res/layouts/authorization/mipmap-anydpi-v26/ic_launcher.xml" value="0.1155" />
+        <entry key="app/src/main/res/layouts/authorization/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1155" />
+        <entry key="app/src/main/res/layouts/basket/layout-v31/item_basket.xml" value="0.3013918841326678" />
+        <entry key="app/src/main/res/layouts/basket/layout/item_basket.xml" value="0.2899504944518371" />
+        <entry key="app/src/main/res/layouts/catalog/layout/activity_catalog.xml" value="0.15520833333333334" />
+        <entry key="app/src/main/res/layouts/catalog/layout/activity_main3.xml" value="0.15520833333333334" />
+        <entry key="app/src/main/res/layouts/catalog/layout/item_catalog_main_section.xml" value="0.2796296296296296" />
+        <entry key="app/src/main/res/layouts/catalog/layout/item_catalog_section.xml" value="0.3006439208984375" />
+        <entry key="app/src/main/res/layouts/catalog/layout/item_catalog_section_header.xml" value="0.29938507080078125" />
+        <entry key="app/src/main/res/layouts/home/activity_main2.xml" value="0.2796296296296296" />
+        <entry key="app/src/main/res/layouts/home/activity_main3.xml" value="0.15520833333333334" />
+        <entry key="app/src/main/res/layouts/home/layout/item_base_slider.xml" value="0.2796296296296296" />
+        <entry key="app/src/main/res/layouts/layout/activity_profile.xml" value="0.15520833333333334" />
+        <entry key="app/src/main/res/layouts/mipmap-anydpi-v26/ic_launcher.xml" value="0.1645" />
+        <entry key="app/src/main/res/layouts/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1645" />
+        <entry key="app/src/main/res/layouts/search/layout-v31/item_recommended_search.xml" value="0.2490740740740741" />
+        <entry key="app/src/main/res/layouts/search/layout/item_recommended_search.xml" value="0.34945373535156254" />
+        <entry key="app/src/main/res/layouts/search/layout/item_top_search.xml" value="0.2666996247177822" />
+        <entry key="app/src/main/res/menu/button_menu.xml" value="0.2796296296296296" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.41139867446001843" />
+      </ProjectState>
+    </option>
+  </component>
+</project>

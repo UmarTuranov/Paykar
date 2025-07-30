@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <external-cache-path name="external_cache" path="." />
+    <cache-path name="payment_check_pdf" path="." />
+    <external-files-path name="passports_image" path="." />
+</paths>

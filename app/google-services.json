@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "784926538733",
+    "project_id": "clubpaykar-22392",
+    "storage_bucket": "clubpaykar-22392.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:784926538733:android:d77b0e0a7932ae99e005e4",
+        "android_client_info": {
+          "package_name": "tj.paykar.shop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "784926538733-o40qt60iphmdoic1hsgmn2nlaf2mqbs6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHJwdSGIOvO-QfvRRTSfb6Wc2sjMiAFLY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "784926538733-o40qt60iphmdoic1hsgmn2nlaf2mqbs6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "784926538733-2eqminemidgpqhk6m4ot6pajm0o8plp2.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "ru.paykar.shop"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
